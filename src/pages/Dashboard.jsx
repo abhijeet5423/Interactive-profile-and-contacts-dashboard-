@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from "../components/Card";
+import Counter from '../components/Counter';
 
 const Dashboard = () => {
   return (
@@ -7,14 +8,19 @@ const Dashboard = () => {
       <h2>Dashboard</h2>
    
        <Card>
-        <h3 style={{ color: "red" }}>Total Users</h3>
-        <p style={{ color: "red" }}>1200</p>
+        <h3 >Total Users</h3>
+        <p >1200</p>
       </Card>
 
       <Card>
         <h3>Revenue</h3>
         <p>₹50,000</p>
       </Card>
+        <Card>
+         <Counter label="Profile Views" initialCount={10} />
+        <Counter label="Likes" initialCount={0} />
+         
+        </Card>
     </>
   );
 };
