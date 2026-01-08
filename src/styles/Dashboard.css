@@ -1,0 +1,17 @@
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: #f7f8fa;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dashboard h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+

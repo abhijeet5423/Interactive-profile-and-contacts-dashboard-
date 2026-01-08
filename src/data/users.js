@@ -1,28 +1,21 @@
 const users = [
   {
     id: 1,
-    name: "Rahul Sharma",
-    email: "rahul@example.com",
+    name: "Abhijeet",
+    role: "Frontend Developer",
+    email: "abhijeet@gmail.com",
   },
   {
     id: 2,
-    name: "Anita Verma",
-    email: "anita@example.com",
+    name: "Rahul",
+    role: "Backend Developer",
+    email: "rahul@gmail.com",
   },
   {
     id: 3,
-    name: "Amit Patel",
-    email: "amit@example.com",
-  },
-   {
-    id: 4,
-    name: "Amit Patel",
-    email: "amit@example.com",
-  },
-   {
-    id: 5,
-    name: "Amit Patel",
-    email: "amit@example.com",
+    name: "Sneha",
+    role: "UI/UX Designer",
+    email: "sneha@gmail.com",
   },
 ];
 

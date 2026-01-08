@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import "./../styles/card.css";
+import "./../styles/Counter.css";
 
 const Counter = ({ label, initialCount = 0 }) => {
   const [count, setCount] = useState(initialCount);

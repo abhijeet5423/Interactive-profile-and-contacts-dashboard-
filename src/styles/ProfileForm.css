@@ -1,0 +1,52 @@
+.profile-layout {
+  display: flex;
+  gap: 2rem;              /* space between form & preview */
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Form section */
+.profile-form {
+  flex: 1;
+  background: #990404;
+  padding: 16px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.profile-form h3 {
+  margin-bottom: 4px;
+}
+
+/* Inputs */
+.profile-form input,
+.profile-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.profile-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Live preview content */
+.profile-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column;
+  }
+}

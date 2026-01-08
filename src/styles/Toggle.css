@@ -1,0 +1,35 @@
+.toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Toggle button */
+.toggle-btn {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+}
+
+.toggle-btn:active {
+  transform: scale(0.96);
+}
+
+/* Content wrapper */
+.toggle-content {
+  padding-left: 4px;
+}

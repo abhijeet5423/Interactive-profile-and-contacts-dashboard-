@@ -1,35 +1,46 @@
-import React from 'react';
+import React from "react";
+
 import Card from "../components/Card";
-import Counter from '../components/Counter';
-import Toggle from '../components/Toggle';
-import UserList from '../components/UserList';
+import Counter from "../components/Counter";
+import Toggle from "../components/Toggle";
+import UserList from "../components/UserList";
+import ProfileForm from "../forms/ProfileForm";
 
 const Dashboard = () => {
   return (
-    <>
-      <h2>Dashboard</h2>
-   
-       <Card>
-        <h3 >Form </h3>
-        
-      </Card>
+    <div className="dashboard">
+      <h2>Interactive Profile Dashboard</h2>
 
-      <Card>
-        <h3>Live Preview</h3>
+      {/* Profile Form + Live Preview */}
+      <section >
+        
+  
+          <ProfileForm/>
+        
+
       
-      </Card>
+      </section>
+
+      {/* Counters */}
+      <section className="dashboard-counter">
         <Card>
-         <Counter label="Profile Views" initialCount={10} />
-        <Counter label="Likes" initialCount={0} />
-         
+          <Counter label="Profile Views" initialCount={10} />
+          <Counter label="Likes" initialCount={0} />
         </Card>
-         <Toggle title="Counter Section">
-       <UserList/>
-      </Toggle>
-      
-    </>
+      </section>
+
+      {/* Users List */}
+   <section className="dashboard-users">
+  <Toggle title="Show Users">
+    <div className="users-grid">
+      <UserList />
+    </div>
+  </Toggle>
+</section>
+
+      {/* Contact form will come later */}
+    </div>
   );
 };
-
 
 export default Dashboard;

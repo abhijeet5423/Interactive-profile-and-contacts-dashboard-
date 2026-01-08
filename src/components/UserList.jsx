@@ -1,11 +1,17 @@
-import users from "../data/users";  
+import React from "react";
+import users from "../data/users";
 import Card from "./Card";
+import "./../styles/Userlis.css";
+
+
+
 const UserList = () => {
   return (
-    <div>
+    <div className="user-list">
       {users.map((user) => (
         <Card key={user.id}>
-          <h4>{user.name}</h4>
+          <h3>{user.name}</h3>
+          <p>{user.role}</p>
           <p>{user.email}</p>
         </Card>
       ))}

@@ -1,0 +1,22 @@
+.user-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  padding: 8px 4px;
+
+  /* hide scrollbar (optional, modern browsers) */
+  scrollbar-width: none; /* Firefox */
+}
+
+.user-list::-webkit-scrollbar {
+  display: none; /* Chrome, Edge */
+}
+
+/* Each Card already controls its own width */
+.user-list .card {
+  flex-shrink: 0;
+}
